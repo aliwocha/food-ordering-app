@@ -28,7 +28,7 @@ public class OrderController {
         this.clientOrder = clientOrder;
     }
 
-    @GetMapping("/")
+    @GetMapping
     public String getOrder(Model model) {
         model.addAttribute("order", clientOrder.getOrder());
         model.addAttribute("sum", clientOrder.getOrder().getItems().stream()
