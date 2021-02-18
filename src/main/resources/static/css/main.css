@@ -1,0 +1,10 @@
+.home-jumbo {
+    background: url('../img/jumbo.jpg') center;
+    background-size: cover;
+    min-height: 300px;
+}
+
+.media-body {
+    margin-left: 10px;
+}
+

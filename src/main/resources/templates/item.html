@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link href="../static/css/main.css" th:href="@{/css/main.css}" rel="stylesheet">
+    <title th:text="${item.name}">Pizza Margherita</title>
+</head>
+<body>
+    <div class="container">
+        <div class="col-lg-8 offset-lg-2">
+            <img src="../static/img/margherita.jpg" th:src="@{${item.imgUrl}}" class="img-fluid" alt="Pizza margherita"/>
+            <div class="shadow-lg p-3 mb-5 bg-white rounded" th:object="${item}">
+                <h1 class="text-center" th:text="*{name}">Pizza Margherita</h1>
+                <h4 class="text-center" th:text="|Cena *{price}zł|">Cena 25zł</h4>
+                <p class="text-justify" th:text="*{description}">Szczegółowy opis pizzy margherita, pysznej klasyki
+                    na cienkim cieście i rozpływającym się serem.</p>
+                <a href="#" th:href="@{/zamowienie/dodaj(itemId=*{id})}" class="btn btn-primary btn-lg btn-block">Dodaj do zamówienia</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
