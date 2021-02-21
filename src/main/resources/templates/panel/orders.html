@@ -40,9 +40,13 @@
                         <th scope="row" th:text="${idx.index + 1}">1</th>
                         <td th:text="${order.address}">Kościuszki 13, 52-316 Wrocław</td>
                         <td th:text="${order.telephone}">669890777</td>
-                        <td th:text="${order.status}">Nowe</td>
+                        <th:block th:switch="${order.status}">
+                            <td th:case="${T(pl.javastart.order.OrderStatus).NEW}">Nowe</td>
+                            <td th:case="${T(pl.javastart.order.OrderStatus).IN_PROGRESS}">W realizacji</td>
+                            <td th:case="${T(pl.javastart.order.OrderStatus).COMPLETE}">Zrealizowane</td>
+                        </th:block>
                         <td>
-                            <a href="#" class="btn btn-sm btn-primary">Edytuj</a>
+                            <a href="#" th:href="@{|/panel/zamowienia/${order.id}|}" class="btn btn-sm btn-primary">Edytuj</a>
                         </td>
                     </tr>
                     <tr>
