@@ -1,4 +1,4 @@
-## **Food Ordering App**
+# **Food Ordering App**
 
 The app is a simulation of ordering food at the website of a restaurant. Structure of the app including data model and repositories has been prepared originally by the creator of the course. My task was to develop the app so that it has following funcionalities:
 * very simple but pleasant graphic layout
@@ -8,7 +8,7 @@ The app is a simulation of ordering food at the website of a restaurant. Structu
 * order page summarizing order details with "Order" button
 * managing all orders from the order panel, with an option to change the status and fulfill the order
 
-### **Technology used:**
+## **Technology used:**
 * Java 11
 * SpringBoot
 * Hibernate
@@ -17,16 +17,16 @@ The app is a simulation of ordering food at the website of a restaurant. Structu
 * Thymeleaf
 * Bootstrap
 
-### **How to run:**
+## **How to run:**
 1. Clone the repository onto your own computer.
 
 2. Go to the main folder of the project and run this command:
 
-*for the Unix system:
+* for the Unix system:
 ```
 ./mvnw spring-boot:run
 ```
-*for the Windows CMD:
+* for the Windows CMD:
 ```
 mvnw.cmd spring-boot:run
 ```
