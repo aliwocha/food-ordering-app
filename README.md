@@ -1,6 +1,6 @@
 # **Food Ordering App**
 
-The app is a simulation of ordering food at the website of a restaurant. Structure of the app including data model and repositories has been prepared originally by the creator of the course. My task was to develop the app so that it has following funcionalities:
+The app is a simulation of ordering food at the website of a restaurant. Structure of the app including data model and repositories was prepared originally by the creator of the course. My task was to develop the app so that it has following funcionalities:
 * very simple but pleasant graphic layout
 * menu of avaialble dishes at home page
 * pages of all products, with description, photo and price
