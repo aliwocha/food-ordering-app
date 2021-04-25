@@ -8,9 +8,10 @@ The app is a simulation of ordering food at the website of a restaurant. Structu
 * order page summarizing order details with "Order" button
 * managing all orders from the order panel, with an option to change the status and fulfill the order
 
-## **Technology used:**
+## **Technology and tools used:**
 * Java 11
 * SpringBoot
+* Spring Data JPA
 * Hibernate
 * H2
 * HTML
